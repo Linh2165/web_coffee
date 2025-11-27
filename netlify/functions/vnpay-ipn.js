@@ -37,7 +37,7 @@ exports.handler = async (event) => {
         
         // Lấy URL gốc của website (ví dụ: https://23dh.netlify.app/)
         // Dùng header.host để lấy domain hiện tại
-        const siteUrl = event.headers.host ? `https://${event.headers.host}` : 'https://23dh.netlify.app';
+        const siteUrl = event.headers.host ? `https://${event.headers.host}` : 'https://tranquil-twilight-ec10f7.netlify.app/trangchu';
 
         // Sử dụng hàm verifyReturnUrl của thư viện để xác thực cả IPN
         const verify = vnpay.verifyReturnUrl(query); 
